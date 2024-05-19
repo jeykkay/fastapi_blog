@@ -1,7 +1,9 @@
 from fastapi import FastAPI
+from fastapi.security import OAuth2PasswordBearer
 import posts
 import users
 
+OAUTH2_SCHEME = OAuth2PasswordBearer('users/login/')
 
 app = FastAPI()
 

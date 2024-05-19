@@ -22,4 +22,8 @@ class UserCreate(UserBase):
 
 class User(UserBase):
     id: int
-    email: str
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
